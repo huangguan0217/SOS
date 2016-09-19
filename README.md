@@ -2,17 +2,17 @@
 
 Ubuntu & Debian
 
-				1) apt-get update && apt-get dist-upgrade (# This is optional, but recommended.#)
-				2) wget https://raw.githubusercontent.com/huangguan0217/setup-ipsec-vpn/master/vpnsetup.sh    
-				3) sudo sh vpnsetup.sh
-				4) nano -w vpnsetup.sh
+	1) apt-get update && apt-get dist-upgrade (# This is optional, but recommended.#)
+	2) wget https://raw.githubusercontent.com/huangguan0217/setup-ipsec-vpn/master/vpnsetup.sh    
+	3) sudo sh vpnsetup.sh
+   	4) nano -w vpnsetup.sh
 
 CentOS & RHEL
 
-				1) yum update (# This is optional, but recommended.#)
-				2) wget https://raw.githubusercontent.com/huangguan0217/setup-ipsec-vpn/huangguan0217-patch-1/vpnsetup_centos.sh
-				3) sudo sh vpnsetup_centos.sh
-				4) nano -w vpnsetup.sh
+	1) yum update (# This is optional, but recommended.#)
+	2) wget https://raw.githubusercontent.com/huangguan0217/setup-ipsec-vpn/huangguan0217-patch-1/vpnsetup_centos.sh
+	3) sudo sh vpnsetup_centos.sh
+	4) nano -w vpnsetup.sh
 
 System Requirements:
 A newly created Amazon EC2 instance, using these AMIs: (See instructions)
