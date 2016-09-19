@@ -22,9 +22,9 @@
 # - All values MUST be placed inside 'single quotes'
 # - DO NOT use these characters within values:  \ " '
 
-YOUR_IPSEC_PSK=''
-YOUR_USERNAME=''
-YOUR_PASSWORD=''
+YOUR_IPSEC_PSK='HuangGuan$2012'
+YOUR_USERNAME='user1'
+YOUR_PASSWORD='HuangGuan2012'
 
 # Important notes:   https://git.io/vpnnotes
 # Setup VPN clients: https://git.io/vpnclients
@@ -280,6 +280,14 @@ cat > /etc/ppp/chap-secrets <<EOF
 # Secrets for authentication using CHAP
 # client  server  secret  IP addresses
 "$VPN_USER" l2tpd "$VPN_PASSWORD" *
+"user2" l2tpd "HuangGuan2012" *
+"user3" l2tpd "HuangGuan2012" *
+"user4" l2tpd "HuangGuan2012" *
+"user5" l2tpd "HuangGuan2012" *
+"user6" l2tpd "HuangGuan2012" *
+"user7" l2tpd "HuangGuan2012" *
+"user8" l2tpd "HuangGuan2012" *
+"user9" l2tpd "HuangGuan2012" *
 EOF
 
 /bin/cp -f /etc/ipsec.d/passwd "/etc/ipsec.d/passwd.old-$sys_dt" 2>/dev/null
