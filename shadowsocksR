@@ -1,88 +1,170 @@
-#!/bin/bash
-# chkconfig: 2345 90 10
-# description: A secure socks5 proxy, designed to protect your Internet traffic.
+用户【何方兴(h00219997) 】使用台式电脑，本地Citrix客户端安装失败，手动将之前版本Citrix客户端删除，运行：“ReceiverCleanupUtility_2.2.0.1”都无效。安装Citrix客户端仍然提示已经安装。
 
-### BEGIN INIT INFO
-# Provides:          ShadowsocksR
-# Required-Start:    $network $syslog
-# Required-Stop:     $network
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Fast tunnel proxy that helps you bypass firewalls
-# Description:       Start or stop the ShadowsocksR server
-### END INIT INFO
+用户没有其他TC设备或者
 
-# Author: Teddysun <i@teddysun.com>
+x工，您好，我是桌面云运营团队的同事，看到您在社区上反馈：“XXXXXXXXX”；
+存调优名单我先已记录，下周后台会统一安排内存调优，调优完成后会以邮件形式通知给您，您看是否可以？
 
-NAME=ShadowsocksR
-BIN=/usr/local/shadowsocks/server.py
-CONF=/etc/shadowsocks.json
-RETVAL=0
+z00445066
+l00327881
+s00333300
+zwx240581
+wwx479820
 
-check_running(){
-    PID=`ps -ef | grep -v grep | grep -i "${BIN}" | awk '{print $2}'`
-    if [ ! -z $PID ]; then
-        return 0
-    else
-        return 1
-    fi
-}
+工，您好，名单已记录，下周会统一安排内存调优，调优完成后会以邮件形式通知给您；后续有问题可及时反馈，竭诚为您服务~
 
-do_start(){
-    check_running
-    if [ $? -eq 0 ]; then
-        echo "$NAME (pid $PID) is already running..."
-        exit 0
-    else
-        $BIN -c $CONF -d start
-        RETVAL=$?
-        if [ $RETVAL -eq 0 ]; then
-            echo "Starting $NAME success"
-        else
-            echo "Starting $NAME failed"
-        fi
-    fi
-}
+cwx436174
+zhaoshang1213!
 
-do_stop(){
-    check_running
-    if [ $? -eq 0 ]; then
-        $BIN -c $CONF -d stop
-        RETVAL=$?
-        if [ $RETVAL -eq 0 ]; then
-            echo "Stopping $NAME success"
-        else
-            echo "Stopping $NAME failed"
-        fi
-    else
-        echo "$NAME is stopped"
-        RETVAL=1
-    fi
-}
+http://w3.huawei.com/servicedesk/itservice/casemanage/#/index?page_navigation=knowledge&menuIndex=3
 
-do_status(){
-    check_running
-    if [ $? -eq 0 ]; then
-        echo "$NAME (pid $PID) is running..."
-    else
-        echo "$NAME is stopped"
-        RETVAL=1
-    fi
-}
+我们在后台检查用户：的云状态，查询无法登陆的原因，请提供一下云账号登陆密码，谢谢。
 
-do_restart(){
-    do_stop
-    do_start
-}
 
-case "$1" in
-    start|stop|restart|status)
-    do_$1
-    ;;
-    *)
-    echo "Usage: $0 { start | stop | restart | status }"
-    RETVAL=1
-    ;;
-esac
+步骤：您点击正上方菜单栏 —— 主页(Home) —— 回到TC最原始的界面-- 按Ctrl + Alt + A
+目的：看下系统OS版本，有无AccessClient补丁。
 
-exit $RETVAL
+1. 鼠标放到Windows 7桌面云桌面顶部，点击最小化按钮，返回到TC界面，点击Start (开始)---Control Center(控制中心)---点击CCCM Agent(或者找CDMS)，勾选不设置纳管服务器输入密码如下: centerm123!@# 
+2. 已通过电话与您沟通，拿到你的TC的IP地址：10.234.192.218
+3. 我找后台推下eSpace通话补丁，新云需要这个补丁，会推送至TC盒子。
+
+用户【龚思远(gwx502700) 】昨天和今天，大概早上九点40左右，断连，现象：网络红了一分钟。
+
+- 改用vlb，问题依旧。
+
+- 昨天给用户卸载了hda，核心插件升级到 1.6.10009.0
+
+- 今天早上，用户依旧出现该问题。
+
+事实上，我们登录，正常连接，但很难复现这个断连的情况。
+
+
+我看到是上周，您提交的扩容申请，周一就生效了，验证内存生效状态，需将桌面云，点击关机，从整jsb个服务器后端释放出来（拟断电从节点退出），
+不用担心，关机后的桌面云，会自动启动，大时间五分钟可以可以正常使用查看调优后的参数（系统属性：16GB RAM）。
+调优后一般会收到邮件通知， 您检查一下邮箱，是否近期有收到后台发给您的邮件。
+
+考虑到您在会议当中，若您通过在线填写电子流来调优内存，请告知我们一下，我们将转告后台：手动调优扩容申请将取消。【主要是避免叠加申请。】
+
+
+I think you should change to another time. that's could be convince for us. one of the reason is that Huawei provide more security and advanced feature in R6
+(R6 was called: New Version System Architecture), but the very important point just for Cloud system security.
+
+
+周工，您好，我是桌面云运营团队的同事，看到您在社区上反馈：“扩加内存”；
+通过后台查询到云所属：nkgy2 R2版本，R2版本不再支持内存升级，建议切换至新云。
+切换新云，所有数据以及新云上所有软件都需要重新安装；新云和旧云可并存一周时间（安全期），是否同意迁移呢？
+
+x00416209
+l00445604
+
+工，您好，名单已记录，下周会统一安排内存调优，调优完成后会以邮件形式通知给您；后续有问题可反馈，竭诚为您服务~
+
+工，您好，我是桌面云运营团队的同事，看到您在社区上反馈：“桌面云内存扩容，当前8G，日常办公都卡顿，申请升级到16G”。
+	第一：我们通过后台查询到您的云所属：ctuy1 R2版本，R2版本不再支持内存升级，建议切换至新云。
+	第二：目前由于西区（成都）地区没有新云资源可以调配，我先将您录入系统做待调优名单，预计将于7月份左右上新一批硬件资源，届时为您升级，该方案是否可以接受？
+
+工，您好，名单已记录，下周会统一安排内存调优，调优完成后会以邮件形式通知给您；后续有问题可反馈，竭诚为您服务~
+
+工，您好，我是桌面云运营团队的同事，看到您在社区上反馈：“”。
+	一：我们通过后台查询到您的云：（ctuy1）为R2版本。R2版本服务器较老，不再支持内存升级，建议切换至新云。
+		二：目前由于西区（成都）地区没有新云资源可以调配，我先将您录入系统作待调优名单，预计将于7月份左右上新一批硬件资源，届时为您升级，该方案是否可以接受？
+
+SZXG7L003596381
+
+联系合作方员工找部门秘书或项目接口人。华为这边的接口人。
+
+Hi, recently we've found that under your employee ID you had one Desktop Cloud (Virtual Machine), it's been a long time you didn't use it, so we highly recommend you to release this Desktop Cloud (Virtual Machine), because one Virtual Machine not only cost your department money $305.32 per year, but also that's kind of waste IT resource. At the end of the process, if you don't have any data on your Virtual Machine, probably off work, IT'll plan to release unused Virtual Machine.
+
+新云，一般会分配一个除了C盘之外的另一个盘符，你可以自定义，等于现在D盘：119GB，F盘： 79. （辅助工具：磁盘管理工具）可以完成。我这边收到的名单，明天能生成新云。我会把新云的通知 + 搬迁数据的指导手册一同告知，发给你。
+
+用户【余文翔(y00293395)】D盘（118.31G） + E盘（89.67G） + F盘 （71.92G）= 279.9GB, 新云发放除了C盘（80G）外，D盘才200。是否需要另外申请？
+
+您好，已增加新云磁盘
+需要通过右键 计算机 --管理--磁盘管理--灰色磁盘2--初始化磁盘（默认MBR） 右键灰色部分--新建卷--可通过卷大小进行分区
+
+我看你今天已经加入搬迁名单，下周一，你会收到新云，因为今天周五，今天报名，后天下发新云，到时候你会收到一封邮件，数据迁移手册+新云地址。等我邮件。
+
+
+I recently joined the paws walk and think it's great event RSPCA has tarted. I urgently plead RSPCA go get involved in the recent horor crime against a pet animal(a 7wk old kitten microwaved death) where the perpetrator sucessfully used "mental problem" to his advantage AGAIN to have avoided any fair judgement.
+
+我看到您的问题了。回现一下场景：下班后，双屏关闭了电源，就离开办公室，第二天回来，打开双屏电源，发现只有主屏，可以进入Windows的界面，副屏处于TC最原始的蓝色界面。总之要彻底退出CloudClient后，重新登录一次，才彻底正常，效率办公。所以目前最好的方式，您每天下午下班后，直接显示器关不关无所谓，只要TC（就是那个小盒子）电源关闭了，避开服务器策略监测(检测)TC。第二天开TC盒子，你就发现双屏无需单独设置，都可使用。
+
+http://w3.huawei.com/hicloud
+
+这样，明天下发新云，旧云、新云并存，到时候你会收到一封邮件，数据迁移手册+新云地址。等我邮件。您按照自己项目和工作进度合理安排，抽空时间把新云配置好，可以往后延迟，但旧服务器终究会下线的。
+
+哦，是吗，我怕有名单有疏漏，我所负责的南京用户，都联系一遍。
+
+搬迁其实很快的，数据华为自研的iDesk工具迁移，除了基本的办公应用软件默认自带，其余编程环境变量，额外的软件需要自己重新安装。
+
+旧云的数据，在旧服务器还未下线前，不会动数据，所以C盘格式，是新云会装入系统。这个过程可以忽略，不影响到您的旧云C盘。还有其他盘，到时候自动分配盘符，也可以自定义。
+
+Hi, respons: [Penghao Tian (p80048640)]
+
+Hi, Kari, I've got a good news, I've received new email from IT Department and then searched the whole of the Excel file, I find that part of Europ Server pretty closing the end of its usable life, IT plan took some time to replace those old server, especially [fray1] Sever,  I think Responsible person [Penghao Tian (p80048640)] will contact you soon, who will create the New Desktop Cloud Machine on [fray2], I guest, send you "Transfer Data instruction sheet" to smoothly tranfer the old data for you, it's provide more security and andvanced feature on New server architecture, user-friendly to login, instead of complicated way to login without further daunting setup and the error.
+
+IT热线联系方式 
+（1）IT服务热线：0755-28560160 
+（2）IT热线邮箱地址： ithotline@huawei.com  
+
+%SystemRoot%;%SystemRoot%\system32;%SystemRoot%\System32\Wbem;%SystemRoot%\System32\WindowsPowerShell\v1.0;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Citrix\ICAService\;C:\Program Files (x86)\Citrix\System32\;C:\Program Files\TortoiseSVN\bin;
+
+旧云地址： \\10.135.95.202\D$
+
+就是上次，不是有个搬迁计划嘛，你的桌面云也在列表里，然后我就让你报名了搬迁，后台给你发了新的桌面云在新的服务器上，最后我发邮件通知你，是时候可以搬迁旧云上的数据了，最最后，搬迁完毕后，如果新的桌面云没啥问题，就可以释放旧云咯。
+因为我要确保你的旧桌面云，无数据问题了，才建议你释放的
+
+
+不用重新迁移，书签储量不大的话，可以发邮件给自己，或者放到旧云D盘下，然后在新云里通过地址：
+\\10.135.97.129\D$  可以访问您旧云的D盘，拷贝过来。
+
+
+为能更便捷的诊断出故障，后续产品还会推出自动诊断工具，以更好的配合自助维护台使用。
+
+Hi there, If you receive this message, it's mean you've been added in our Data Migration List, and also I'd sent you the informed email recently, here just make sure you receive it.
+
+Introducing: Your Desktop Cloud located in server Fray1 OR Frag1, and those Cloud Server almost reaching the end of its usable life, we have to replace those old machine on the next few weeks, and will shut down old Cloud before the final stages of your data-migrate procedure complete.
+
+I'm here to assistant you migrate the data to New Desktop Cloud, if you got any problem please let me know, I think it could be the great opportunity to cooperate with you. So let's do it, you can download the instruction from the Email attachments, In that Instructions you can see how to finish data-Transfer, it's not that complicated tasks to take a look of those steps, it will help you migrate the data more smoothly.
+
+If you already finish above data-migrate steps or has been using the New Desktop Cloud (Fray2 and Frag2) a long time, I highly recommend you to release the previous Virtual Machine that will not going to use anymore, and at the same time, please let me know you've submitted below application, I need to collect the data of release number.
+Apply Release Link: http://w3.huawei.com/hicloud/portal/ReleaseDesktopAction.do?taskVO.workflowName=releaseVm&catagoryId=22&requestId=24&method=toCreateWorkflow
+
+
+（1） 之前的邮件，比如按照年份积累的邮件，放在Outlook左侧面板的没有，是这种情形？
+（2） 还是Outlook在新云上完全无法打开，一封邮件都收不到？
+
+备注：如果是第（ 1）种情况，确保数据已经完全从旧云那边迁移过来，一般往年累计的邮件，这种文件后缀为：pst文件，都在旧云D盘，伴随数据搬迁也复制到新云的D盘，在Outlook有个，邮件小助手，可以扫描新桌面云上所有的pst文件，并导入进去。
+
+从旧桌面云复制文件过去，不影响您旧云的工作，只是复制过去，不是剪切，如果怕耽搁项目进度，临时可以在旧云上替代办公，尽量抽空时间，将新桌面云的工作环境调配好，大略检查一下数据搬迁是否完整，旧云不会被注销，两周左右，新旧桌面云，都可以使用。
+数据搬迁可以在下班的时候进行，不影响您白天的项目工作进度，下班也不需要非得守在电脑旁，当您设置好，触发搬迁，整个进度在服务器后台静默完成。
+
+重新拔插网线网口，重置TC；若还不行将同事的TC暂借过来接上这个网线试试看是否正常获取ip，若不能，找网络组；若能，找管理员更换TC
+
+%SystemRoot%;%SystemRoot%\system32;%SystemRoot%\System32\Wbem;%SystemRoot%\System32\WindowsPowerShell\v1.0;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Citrix\ICAService\;C:\Program Files (x86)\Citrix\System32\;C:\Program Files\TortoiseSVN\bin
+
+789654*l 
+
+谢谢及时回复，有空，就几秒钟，填下释放电子流链接：
+http://w3.huawei.com/hicloud/portal/ReleaseDesktopAction.do?taskVO.workflowName=releaseVm&catagoryId=22&requestId=24&method=toCreateWorkflow
+
+请截一张类似于下图给我看下，便于我区分什么版本？
+
+Okay，我这边统计下数据。通常您打开多少个IDEA窗口会出现卡慢现象呢？
+
+非常感谢您的反馈，后台数据分析显示推送给我们，IDEA很耗资源，您可以在hicloud.huawei.com上申请华为研发云做开发编译，这样会提升您的办公效率 :)
+
+
+用这个地址登录：cloud-siay9.huawei.com
+
+或者我们拉会议，给你看下。
+
+你进到会议云，非桌面云办公云，登录eSpace，我这边打开你的桌面云，你远程看我操作，密码你那边输入。
+
+下午请假 & 桌面云问题请留言  & 武汉数据搬迁启动
+
+
+
+twx196910,fwx176429
+
+桌面云分两种，一种是华为自研（HDP版本），还有就是你现在用的合作云（早期和Citrix合作的ICA版本），当时的CloudClient兼容Windows 7，时过境迁，往后都往自研方向发展，Citrix对Windows 10 的兼容很差，如果你依然需要使用USB的映射来调试手机，建议你使用安装Windows 7系统的PC（笔记本电脑或者台式机），或者申请一个TC云盒子，来支撑项目。
